@@ -1,0 +1,69 @@
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+    html {
+        font-size: 55%;
+    }
+    #nav-toggle {
+        display: inline-block;
+    }
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: whitesmoke;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s ease;
+    }
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+    .navbar .navbar-nav a {
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.6);
+    }
+    .about .row {
+        flex-wrap: wrap;
+    }
+    .about .row .about-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 1rem;
+    }
+    .menu p {
+        font-size: 1.5rem;
+    }
+    .contact .row {
+        flex-wrap: wrap;
+    }
+    .contact .row .map {
+        height: 30rem;
+    }
+    .contact .row form {
+        padding-top: 0;
+    }
+}
+
+/* Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 35%;
+    }
+}
